@@ -2,7 +2,7 @@
     max-width: 640px;
     margin: 0 auto;
     padding: 1.5rem;
-    min-height: 80vh;
+    min-height: calc(100vh - 80px); /* subtract your navbar's height */
     display: flex;
     align-items: center;
 }
@@ -36,10 +36,6 @@
     gap: 0.35rem;
 }
 
-.contact-info li:not(:last-child)::after {
-    content: none;
-}
-
 .contact-info a {
     display: flex;
     flex-direction: column;
@@ -47,6 +43,7 @@
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .contact-info a::before {
