@@ -1,3 +1,24 @@
+.contact-container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-container section {
+    width: 100%;
+}
+
+.contact-title {
+    color: var(--text-h);
+    font-size: 2.75rem;
+    letter-spacing: -1px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
 .contact-info {
     list-style: none;
     padding: 0;
@@ -33,4 +54,10 @@
     color: var(--text);
     font-weight: 500;
     font-size: 0.8rem;
-    text-transform:
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-info a:hover span {
+    text-decoration: underline;
+}
