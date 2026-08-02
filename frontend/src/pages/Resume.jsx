@@ -1,5 +1,5 @@
 import './Resume.css';
-import resumePDF from '../assets/Nat_Cabrera_Resume.pdf';
+import resumePDF from '../assets/Resume_N_Cabrera_Site.pdf';
 
 function Resume() {
     return (

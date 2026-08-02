@@ -4,12 +4,12 @@ function Home() {
     return (
         <div>
             <section>
-                
-                <div className="profile-pic-wrapper">
+
+                <div className="profile-pic-wrapper fade-in delay-1">
                     <div className="profile-pic" />
                 </div>
-                <h1 className="about-text">About</h1>
-                <p className="bio-p">
+                <h1 className="about-text fade-in delay-2">About</h1>
+                <p className="bio-p fade-in delay-3">
                     Hi, I'm Nat Cabrera, I made this website. I am an impact-driven data professional with 6+
                     years of experience spanning analytics, regulatory reporting, and
                     program management across legal advocacy, impact finance, and
@@ -20,25 +20,18 @@ function Home() {
                     programs, and build dashboards tracking capital transactions,
                     loans, and investments exceeding $7M.
                 </p>
-                <p className="bio-p">
+                <p className="bio-p fade-in delay-4">
                     I'm also the founder of Align, an ethical consumer insights
                     platform, currently in development, where I design PostgreSQL schemas modeling ESG data,
                     supply chains, and corporate governance to help people make more
                     informed purchasing decisions.
                 </p>
-                <p className="bio-p">
+                <p className="bio-p fade-in delay-5">
                     My background spans advocacy and data work in the NYC court
                     system, sustainability program management, and CRM-driven
-                    business development — all united by a focus on using data to
+                    business development, all driven by a focus on using data to
                     surface trends, improve outcomes, and support better
-                    decision-making.
-
-
-
-
-
-
-
+                    decision-making for social impact.
                 </p>
             </section>
         </div>
