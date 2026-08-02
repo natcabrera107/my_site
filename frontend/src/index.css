@@ -1,0 +1,141 @@
+/* Add this to your index.html <head>, above your own stylesheet link:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+*/
+
+:root {
+  --text: #63707e;                /* muted slate gray - body copy */
+  --text-h: #131c2e;               /* near-black navy - headlines */
+  --bg: #f6f7f9;                   /* very light cool white */
+  --surface: #ffffff;
+  --border: #e2e5ea;
+  --code-bg: #eef0f3;
+
+  --accent: #46ab92;               /* teal-green - primary CTA/accent */
+  --accent-hover: #388f7a;
+  --accent-bg: rgba(70, 171, 146, 0.10);
+  --accent-border: rgba(70, 171, 146, 0.4);
+
+  --accent-2: #131c2e;             /* navy used sparingly as secondary */
+  --social-bg: rgba(226, 229, 234, 0.6);
+  --shadow:
+    rgba(19, 28, 46, 0.06) 0 10px 15px -3px, rgba(19, 28, 46, 0.05) 0 4px 6px -2px;
+
+  --sans: 'Plus Jakarta Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Plus Jakarta Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/150% var(--sans);
+  letter-spacing: 0.1px;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: var(--surface);
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  color: var(--text-h);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 108%;
+  letter-spacing: -1.2px;
+  margin: 32px 0 18px;
+  @media (max-width: 1024px) {
+    font-size: 34px;
+    margin: 20px 0 14px;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 128%;
+  letter-spacing: -0.2px;
+  margin: 0 0 8px;
+  color: var(--text-h);
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
+}
+
+p {
+  margin: 0;
+  color: var(--text);
+}
+
+/* Primary button - matches the teal CTA from the reference */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+}
+
+.accent-link {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent-border);
+  text-decoration: none;
+  font-weight: 600;
+  transition: border-color 0.15s ease;
+}
+.accent-link:hover {
+  border-color: var(--accent);
+}
