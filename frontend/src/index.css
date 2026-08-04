@@ -7,10 +7,10 @@
 :root {
   --text: #63707e;                /* muted slate gray - body copy */
   --text-h: #131c2e;               /* near-black navy - headlines */
-  --bg: #f6f7f9;                   /* very light cool white */
-  --surface: #ffffff;
-  --border: #e2e5ea;
-  --code-bg: #eef0f3;
+  --bg: #eef3f1;                   /* very light cool white */
+  --surface: #eef3f1;
+  --border: #eef3f1;
+  --code-bg: #eef3f1;
 
   --accent: #46ab92;               /* teal-green - primary CTA/accent */
   --accent-hover: #388f7a;
@@ -18,7 +18,7 @@
   --accent-border: rgba(70, 171, 146, 0.4);
 
   --accent-2: #131c2e;             /* navy used sparingly as secondary */
-  --social-bg: rgba(226, 229, 234, 0.6);
+  --social-bg: rgba(19, 25, 35, 0.6);
   --shadow:
     rgba(19, 28, 46, 0.06) 0 10px 15px -3px, rgba(19, 28, 46, 0.05) 0 4px 6px -2px;
 
@@ -43,6 +43,7 @@
 body {
   margin: 0;
   background-color: var(--bg);
+  
 }
 
 #root {

@@ -3,7 +3,7 @@ import './Home.css';
 function Home() {
     return (
         <div>
-            <section>
+            <section className="home-container">
 
                 <div className="profile-pic-wrapper fade-in delay-1">
                     <div className="profile-pic" />

@@ -4,8 +4,9 @@
     align-items: center;
     padding: 1rem 2rem;
     background: var(--text-h);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
-
 .navbar-toggle {
     display: none;
     background: none;
@@ -17,7 +18,7 @@
 
 .navbar-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.8rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -54,4 +55,10 @@
     color:azure;
     font-weight: lighter;
     font-family: monospace;
+    padding-left: 4rem;
+}
+
+.navbar-brand-link {
+    text-decoration: none;
+    color: inherit;
 }
